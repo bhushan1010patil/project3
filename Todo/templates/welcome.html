@@ -1,0 +1,35 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+    h2{
+    color:blue;
+    font-weight:bold;
+    font-style:oblique;
+    text-decoration:underline;
+
+    }
+</style>
+<div class="container mt-5">
+<h2>Welcome to TODO List</h2>
+    <div class="row" style="margin-top:50px">
+        <div class="col col-sm-6 text-center">
+            <img src="{% static 'images/todo1.jpg' %}" width="400" height="300">
+        </div>
+        <div class="col col-sm-6 text-center mt-5">
+            <h6><b>This is list for Employee <br>
+            This app developed by using Python Django framework, HTML, CSS, Javascript and
+                Sqlite database</b></h6>
+        </div>
+
+
+    </div>
+</div>
+{% endblock %}
+
+<!--
+when we click on Show All link then it will going views.py(def show(request)) after that it will
+render the show.html page
+-->
